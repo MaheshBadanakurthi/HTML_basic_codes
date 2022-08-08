@@ -3,7 +3,7 @@
    
 </head>
 <body>
-    <form><fieldset>
+    <form method="post"><fieldset>
         <legend> Personal Details </legend>
         <p><lable>Salutation</lable><br>
         <select>
@@ -11,20 +11,34 @@
             <option>Ms.</option>
             <option>Mr.</option>
         </select></p><br>
-        <label>First Name: <input type="text" value="text" placeholder="enter name"></label><br>
-        <label>First Name: <input type="text" value=""></label><br>
+        <label>First Name: <input type="text"  placeholder="enter name"></label><br>
+        <label>First Name: <input type="text" ></label><br>
         <lable>Gender: <input type="checkbox" >Male</lable><br>
         <lable> <input type="radio" value="gender">Female</lable><br>
         <lable>emailID: <input type="email"></lable><br>
         <lable>password: <input type="password"></lable><br>
         <lable>DOB: <input type="month"></lable><br>
-        <lable>DOB: <input type="week"></lable><br>
+        <lable>DOB: <input type="date"></lable><br>
         <Lable>Address:<br>
-        <textarea rows="10" cols="10"> </textarea></Lable>
-        <br><button>Submit</button>
+        <textarea rows="12" cols="12"> </textarea></Lable>
+        <br><button>reset</button>
 
-
-    </fieldset></form>
+    <label for="color">select color: </label>
+    <input type="color">
+    <label for="time">select time:</label>
+    <input type="time">
+<br>  <label for="datetime">select date time:</label>
+    <input type="datetime"><br>
+    <input type="range" min="0" max="5">
+    <br><lable>search</lable>
+    <input type="search"><br>
     
+    <label >mobile</label>
+    <input type="number"><br>
+    <label for="choose">Would you prefer a banana or a cherry?</label>
+  <input id="choose" name="i_like" required pattern="[Bb]anana|[Cc]herry">
+  <button>Submit</button>
+
+</fieldset></form>
 </body>
 </html>
